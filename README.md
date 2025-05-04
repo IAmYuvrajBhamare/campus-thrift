@@ -1,21 +1,24 @@
-🎒 Second-Hand Student Marketplace
-A simple, beginner-friendly web app for buying and selling used items among students.
+# 🎒 Second-Hand Student Marketplace
 
-🧭 Overview
-The Second-Hand Marketplace is a lightweight front-end project designed for first-year engineering students learning web development. It enables users to:
+> *A simple, beginner-friendly web app for buying and selling used items among students.*
 
-🛍️ Browse second-hand items like calculators, books, and gadgets
+---
 
-➕ Post their own items for sale
+## 🧭 Overview
 
-🔍 View product details and seller information
+The **Second-Hand Marketplace** is a lightweight front-end project designed for **first-year engineering students** learning web development. It enables users to:
 
-No database needed! Data is saved in a simple text file to keep things easy.
+* 🛍️ **Browse** second-hand items like calculators, books, and gadgets
+* ➕ **Post** their own items for sale
+* 🔍 **View** product details and seller information
 
-📁 Project Structure
-bash
-Copy
-Edit
+**No database needed!** Data is saved in a simple text file to keep things easy.
+
+---
+
+## 📁 Project Structure
+
+```
 project/
 ├── css/
 │   ├── normalize.css        # Ensures consistent styles across browsers
@@ -29,96 +32,99 @@ project/
 ├── index.html               # Landing page
 ├── product-detail.html      # View a single product
 └── products.html            # Browse all items
-✨ Features
-🏠 Homepage: Simple welcome page with navigation
+```
 
-📋 All Products Page: List of available items
+---
 
-🔎 Product Detail Page: View item descriptions and contact info
+## ✨ Features
 
-✍️ Add Item Page: Upload your own second-hand product
+* 🏠 **Homepage**: Simple welcome page with navigation
+* 📋 **All Products Page**: List of available items
+* 🔎 **Product Detail Page**: View item descriptions and contact info
+* ✍️ **Add Item Page**: Upload your own second-hand product
+* 💾 **Local Storage**: Data is saved using text files (no database needed)
 
-💾 Local Storage: Data is saved using text files (no database needed)
+---
 
-🚀 Getting Started
-✅ Requirements
-A modern web browser (Chrome, Firefox, Edge, etc.)
+## 🚀 Getting Started
 
-Code editor (VS Code recommended)
+### ✅ Requirements
 
-Basic knowledge of HTML, CSS, and JavaScript
+* A modern web browser (Chrome, Firefox, Edge, etc.)
+* Code editor (VS Code recommended)
+* Basic knowledge of **HTML**, **CSS**, and **JavaScript**
 
-📥 Installation
-Download or clone this repository
+### 📥 Installation
 
-Open the folder in your editor
+1. Download or clone this repository
+2. Open the folder in your editor
+3. Run the app by:
 
-Run the app by:
+   * Using **Live Server** in VS Code (`Right-click → Go Live`)
+   * Or opening `index.html` in your browser
 
-Using Live Server in VS Code (Right-click → Go Live)
+---
 
-Or opening index.html in your browser
+## 🧑‍💻 How to Use
 
-🧑‍💻 How to Use
-👀 Viewing Items
-Go to the Products page
+### 👀 Viewing Items
 
-Browse the list
+1. Go to the **Products** page
+2. Browse the list
+3. Click a product to view details
 
-Click a product to view details
+### 📝 Adding an Item
 
-📝 Adding an Item
-Go to the Add Product page
+1. Go to the **Add Product** page
+2. Fill in:
 
-Fill in:
+   * Name
+   * Description
+   * Price
+   * Condition (New, Used, etc.)
+   * Contact info
+   * Image (optional)
+3. Click **Submit** — your item appears in the marketplace!
 
-Name
+---
 
-Description
+## 🛠️ Tech Stack
 
-Price
+* **HTML5** – Structure
+* **CSS3** – Styling
+* **JavaScript (Vanilla)** – Interactivity
+* **File Storage** – Products saved in text format for simplicity
 
-Condition (New, Used, etc.)
+---
 
-Contact info
+## 🌱 Future Enhancements
 
-Image (optional)
-
-Click Submit — your item appears in the marketplace!
-
-🛠️ Tech Stack
-HTML5 – Structure
-
-CSS3 – Styling
-
-JavaScript (Vanilla) – Interactivity
-
-File Storage – Products saved in text format for simplicity
-
-🌱 Future Enhancements
 If you're ready to level up, try adding:
 
-🔐 User authentication system
+* 🔐 **User authentication system**
+* 🗃️ **Real database** (like MongoDB or MySQL)
+* 🔍 **Search & filter features**
+* ⭐ **Ratings and reviews**
+* 💬 **Messaging system** between users
 
-🗃️ Real database (like MongoDB or MySQL)
+---
 
-🔍 Search & filter features
+## 📚 Learning Resources
 
-⭐ Ratings and reviews
-
-💬 Messaging system between users
-
-📚 Learning Resources
 Want to dig deeper? Check these out:
 
-🌐 MDN Web Docs – Comprehensive reference
+* 🌐 [MDN Web Docs](https://developer.mozilla.org/) – Comprehensive reference
+* 📘 [W3Schools](https://www.w3schools.com/) – Great for beginners
+* 💻 [freeCodeCamp](https://www.freecodecamp.org/) – Hands-on tutorials
 
-📘 W3Schools – Great for beginners
+---
 
-💻 freeCodeCamp – Hands-on tutorials
+## 🤝 Contributing
 
-🤝 Contributing
-This is a learning project — feel free to modify, improve, and make it your own!
+This is a learning project — feel free to **modify**, **improve**, and **make it your own**!
 
-📄 License
-📘 Open-source and available for educational purposes. Fork it, learn from it, and build something awesome!
+---
+
+## 📄 License
+
+📘 *Open-source and available for educational purposes. Fork it, learn from it, and build something awesome!*
