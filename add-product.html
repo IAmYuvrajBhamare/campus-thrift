@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Item - Campus Marketplace</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Campus<span>Marketplace</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Browse Products</a></li>
+                    <li><a href="add-product.html" class="active btn-primary">Sell Item</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-product-section">
+            <div class="container">
+                <h1 class="page-title">Sell Your Item</h1>
+                <p class="page-description">Complete the form below to list your second-hand item for sale.</p>
+                
+                <div class="form-container">
+                    <form id="add-product-form">
+                        <div class="form-group">
+                            <label for="product-name">Item Name*</label>
+                            <input type="text" id="product-name" name="product-name" placeholder="e.g., Calculus Textbook, TI-84 Calculator" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-category">Category*</label>
+                            <select id="product-category" name="product-category" required>
+                                <option value="">Select a category</option>
+                                <option value="textbooks">Textbooks</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="calculators">Calculators</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-price">Price (₹)*</label>
+                                <input type="number" id="product-price" name="product-price" min="0" step="0.01" placeholder="e.g., 500" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="product-condition">Condition*</label>
+                                <select id="product-condition" name="product-condition" required>
+                                    <option value="">Select condition</option>
+                                    <option value="New">New</option>
+                                    <option value="Like New">Like New</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Poor">Poor</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-code">Item Code/Model (if applicable)</label>
+                            <input type="text" id="product-code" name="product-code" placeholder="e.g., ISBN: 978-0134670942, Model: TI-84 Plus">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-description">Description*</label>
+                            <textarea id="product-description" name="product-description" rows="5" placeholder="Describe your item. Include details about its condition, features, and why you're selling it." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-image">Upload Image*</label>
+                            <input type="file" id="product-image" name="product-image" accept="image/*" required>
+                            <div id="image-preview-container" class="image-preview">
+                                <img id="image-preview" src="" alt="Image preview">
+                                <p>Preview will appear here</p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="seller-name">Your Name*</label>
+                                <input type="text" id="seller-name" name="seller-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="seller-contact">Contact Number*</label>
+                                <input type="tel" id="seller-contact" name="seller-contact" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seller-email">Email Address*</label>
+                            <input type="email" id="seller-email" name="seller-email" required>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="reset" class="btn-secondary">Reset</button>
+                            <button type="submit" class="btn-primary">Submit Listing</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Campus<span>Marketplace</span></h2>
+                    <p>A platform for students to buy and sell second-hand items.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Browse Products</a></li>
+                        <li><a href="add-product.html">Sell Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: pranjalbhamareunofficial@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Listing Submitted!</h2>
+            <p>Your item has been successfully listed on Campus Marketplace.</p>
+            <div class="modal-buttons">
+                <a href="products.html" class="btn-primary">View All Listings</a>
+                <a href="add-product.html" class="btn-secondary">Add Another Item</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/add-product.js"></script>
+</body>
+</html>

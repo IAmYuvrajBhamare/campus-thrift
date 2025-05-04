@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Products - Campus Marketplace</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Campus<span>Marketplace</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Browse Products</a></li>
+                    <li><a href="add-product.html" class="btn-primary">Sell Item</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <h1 class="page-title">Browse Items</h1>
+                
+                <div class="filters">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search items...">
+                        <button id="search-button" class="btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="filter-options">
+                        <div class="filter-group">
+                            <label for="category-filter">Category:</label>
+                            <select id="category-filter">
+                                <option value="all">All Categories</option>
+                                <option value="textbooks">Textbooks</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="calculators">Calculators</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="sort-filter">Sort By:</label>
+                            <select id="sort-filter">
+                                <option value="newest">Newest First</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-asc">Name: A to Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-grid" id="product-container">
+                    <!-- Products will be loaded dynamically here -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/sample-textbook.jpg" alt="Calculus Textbook">
+                        </div>
+                        <div class="product-info">
+                            <h3>Calculus: Early Transcendentals</h3>
+                            <p class="product-price">₹850</p>
+                            <div class="product-meta">
+                                <span class="product-category">Textbooks</span>
+                                <span class="product-condition">Good</span>
+                            </div>
+                            <a href="product-detail.html?id=1" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/sample-calculator.jpg" alt="Scientific Calculator">
+                        </div>
+                        <div class="product-info">
+                            <h3>TI-84 Plus CE Calculator</h3>
+                            <p class="product-price">₹1500</p>
+                            <div class="product-meta">
+                                <span class="product-category">Calculators</span>
+                                <span class="product-condition">Like New</span>
+                            </div>
+                            <a href="product-detail.html?id=2" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/sample-laptop.jpg" alt="Laptop">
+                        </div>
+                        <div class="product-info">
+                            <h3>Dell Inspiron Laptop</h3>
+                            <p class="product-price">₹25000</p>
+                            <div class="product-meta">
+                                <span class="product-category">Electronics</span>
+                                <span class="product-condition">Good</span>
+                            </div>
+                            <a href="product-detail.html?id=3" class="btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- These are just sample products, the actual products will be loaded from the text file -->
+                </div>
+                
+                <div id="no-products-message" class="no-products" style="display: none;">
+                    <div class="no-products-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h2>No products found</h2>
+                    <p>Try adjusting your search or filter criteria, or be the first to sell an item in this category!</p>
+                    <a href="add-product.html" class="btn-primary">Sell an Item</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Campus<span>Marketplace</span></h2>
+                    <p>A platform for students to buy and sell second-hand items.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Browse Products</a></li>
+                        <li><a href="add-product.html">Sell Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: pranjalbhamareunofficial@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Marketplace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
